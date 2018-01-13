@@ -145,7 +145,8 @@
                         "aurelia",
                         "c/c++",
                         "csharp",
-                        "minified"
+                        "minified",
+                        "spec"
                     ],
                     "items": {
                         "type": "string",

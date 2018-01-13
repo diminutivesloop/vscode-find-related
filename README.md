@@ -88,6 +88,19 @@ Please open new [Github issues](https://github.com/eamodio/vscode-find-related/i
                 "locators": ["$1.html"]
             }
         ]
+    },
+    {
+        "name": "spec",
+        "rules": [
+            {
+                "pattern": "(.*)\\.spec(\\..*)$",
+                "locators": ["$1$2"]
+            },
+            {
+                "pattern": "(.*)(\\..*)$",
+                "locators": ["$1.spec$2"]
+            }
+        ]
     }
 ]
 ```
