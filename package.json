@@ -143,6 +143,7 @@
                         "aspnet",
                         "aspnet-mvc",
                         "aurelia",
+                        "angular",
                         "c/c++",
                         "csharp",
                         "minified"

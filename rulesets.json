@@ -72,5 +72,22 @@
                 "locators": ["$1.html"]
             }
         ]
+    },
+    {
+        "name": "angular",
+        "rules": [
+            {
+                "pattern": "(.*)\\.(?:ts|js)$",
+                "locators": ["{$1.html,$1.scss,$1.css}"]
+            },
+            {
+                "pattern": "(.*)\\.html$",
+                "locators": ["{$1.ts,$1.js,$1.scss,$1.css}"]
+            },
+            {
+                "pattern": "(.*)\\.(scss|css)$",
+                "locators": ["{$1.ts,$1.js,$1.html}"]
+            }
+        ]
     }
 ]

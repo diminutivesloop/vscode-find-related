@@ -14,6 +14,7 @@ Basic support for the following languages/frameworks is [built-in](#built-in-rul
 - asp.net
 - asp.net mvc
 - aurelia
+- angular
 
 Please open new [Github issues](https://github.com/eamodio/vscode-find-related/issues) with any rules you'd like included in the built-in ruleset.
 
@@ -86,6 +87,23 @@ Please open new [Github issues](https://github.com/eamodio/vscode-find-related/i
             {
                 "pattern": "(.*)\\.(?:ts|js)$",
                 "locators": ["$1.html"]
+            }
+        ]
+    },
+
+        "name": "angular",
+        "rules": [
+            {
+                "pattern": "(.*)\\.(?:ts|js)$",
+                "locators": ["{$1.html,$1.scss,$1.css}"]
+            },
+            {
+                "pattern": "(.*)\\.html$",
+                "locators": ["{$1.ts,$1.js,$1.scss,$1.css}"]
+            },
+            {
+                "pattern": "(.*)\\.(scss|css)$",
+                "locators": ["{$1.ts,$1.js,$1.html}"]
             }
         ]
     }
